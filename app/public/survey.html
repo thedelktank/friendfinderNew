@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend-Finder</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+   
+</head>
+<body>
+<div class="container">
+<h1>Who's Your Friend?</h1>
+<hr>
+<h2><strong>Basic Information</strong></h3>
+<h4>Name</h3>
+<input type="text" name="" id="name" class="form-control" required>
+<h4>Link to Personalized Image</h4>
+<input type="text" name = "" id="photo" class="form-control" required>
+<hr>
+
+<h5><strong>Question One</strong></h5>
+<h7><label for="question1">You're interested in artistic pursuits and you value creativity.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question1">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+
+<h5><strong>Question Two</strong></h5>
+<h7><label for="question2">You're a logical and critical thinker.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question2">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+
+<h5><strong>Question Three</strong></h5>
+<h7><label for="question3">You'd rather stay inside and read a book instead of go to a party full of strangers.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question3">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+
+<h5><strong>Question Four</strong></h5>
+<h7><label for ="question4">You like playing video games.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question4">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+
+<h5><strong>Question Five</strong></h5>
+<h7><label for="question5">You believe art is important and that it shapes our society and culture.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question5">
+    <option value='null'></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+
+<h5><strong>Question Six</strong></h5>
+<h7><label for="question6">You're more energized after hanging out with friends.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question6">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+
+<h5><strong>Question Seven</strong></h5>
+<h7><label for="question7">You're open to new ideas and value intellectual conversations.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question7">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+    
+<h5><strong>Question Eight</strong></h5>
+<h7><label for="question8">You question authority and challenge the status quo.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question8">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+
+<h5><strong>Question Nine</strong></h5>
+<h7><label for="question9">You're the life of the party.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question9">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+
+<h5><strong>Question Ten</strong></h5>
+<h7><label for="question10">You like performing in front of crowds and enjoy attention.</h7></label>
+<select data-placeholder="" class="chosen-select" id="question10">
+    <option value="null"></option>
+    <option value="1">(Completely Disagree)</option>
+    <option value="2">(Strongly Disagree)</option>
+    <option value="3">(Slightly Disagree)</option>
+    <option value="4">(Neutral)</option>
+    <option value="5">(Slightly Agree)</option>
+    </select>
+</form>
+
+    <br>
+
+    <div class="text-center">
+        <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+    </div>
+    
+
+     <div id="bestFriendModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Your New Best Friend</h1>
+                </div>
+                <div class="modal-body">
+                    <h2 id="bestFriend"></h2>
+                    <img id="bestFriendPhoto" src="#">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</body>
+</html>
+
+<script type="text/javascript">
+$("#submitBtn").on("click", function(event) {
+    event.preventDefault();
+    // Form validation
+    var valid = true;
+    if($("#name").val() === "" || $("#photo").val() === "") {
+        valid = false;
+    } else if($("#question1").val() === "null" || $("#question2").val() === "null" || $("#question3").val() === "null" || $("#question4").val() === "null" || $("#question5").val() === "null" || $("#question6").val() === "null" || $("#question7").val() === "null" || $("#question8").val() === "null" || $("#question9").val() === "null" || $("#question10").val() === "null") {
+        valid = false;
+    }
+    if(valid === true) {
+        var newUser = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+                $("#question1").val().trim(),
+                $("#question2").val().trim(),
+                $("#question3").val().trim(),
+                $("#question4").val().trim(),
+                $("#question5").val().trim(),
+                $("#question6").val().trim(),
+                $("#question7").val().trim(),
+                $("#question8").val().trim(),
+                $("#question9").val().trim(),
+                $("#question10").val().trim()
+            ]
+        };
+        var currentURL = window.location.origin;
+        // Ajax call for receiving response after POST req
+        $.post(currentURL + "/api/friends", newUser, function(data) {
+            $("#bestFriend").text(data.name);
+            $("#bestFriendPhoto").attr("src", data.photo);
+            $("#bestFriendModal").modal("toggle");
+        });
+    } else {
+        // If a required field is missing, show alert
+        alert("Survey is incomplete!");
+    }
+});
+</script>
